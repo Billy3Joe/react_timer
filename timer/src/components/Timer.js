@@ -20,7 +20,7 @@ class Timer extends Component {
             /div> <
             div className = "timer--meta" >
             <
-            p > { this.props.propjet } < /p> <
+            p > { this.props.projet } < /p> <
             /div> <
             div className = "timer--h2" >
             <

@@ -1,10 +1,14 @@
 //Importer les modules dont nous avons besoin
 import React, { Component } from 'react';
+import '../helpers.js'
 
 //On crée notre composant
 class Timer extends Component {
-
     render() {
+        const elapsedString = window.helpers.renderElapsedString(
+            this.props.elapsed,
+            this.props.runningSince,
+        )
         return ( <
             div className = 'timer--box' >
             <
@@ -12,15 +16,15 @@ class Timer extends Component {
             <
             div className = "timer--header" >
             <
-            h2 > Titre < /h2> <
+            h2 > { this.props.title } < /h2> <
             /div> <
             div className = "timer--meta" >
             <
-            p > Projet < /p> <
+            p > { this.props.propjet } < /p> <
             /div> <
             div className = "timer--h2" >
             <
-            h4 > 02: 45: 35 < /h4> <
+            h4 > { elapsedString } < /h4> <
             /div> <
             div className = "actions" >
             <

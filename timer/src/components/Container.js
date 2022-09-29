@@ -8,12 +8,17 @@ class Container extends Component {
 
     render() {
         return ( <
-            div > {
+            div className = 'list--container' > {
                 this.props.isFormOpen ? ( <
                     TimerForm / >
                 ) :
                     ( <
-                    Timer / >
+                    Timer title = "Apprendre React"
+                    projet = "Développement web"
+                    id = "01"
+                    elapsed = "500052"
+                    runningSince = { null }
+                    />
                 )
             } <
             /div>
